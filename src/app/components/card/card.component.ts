@@ -17,28 +17,25 @@
     ngOnInit(): void {
 
       this.apiService.pegarchamp().subscribe((data:any)=> {
+
         this.campeaoList = data.data;
 
         let campeaoIds = Object.keys(this.campeaoList).slice(0,100);
 
         for(let i=0; i < campeaoIds.length; i++){
 
-          let id = campeaoIds[i];
-          let campeao = this.campeaoList[id];
+            let id = campeaoIds[i];
+            let campeao = this.campeaoList[id];
+            
+
+            this.champions.push(campeao)
           
-
-          this.champions.push(campeao)
-        
-          let imgUrl = `https://ddragon.leagueoflegends.com/cdn/14.6.1/img/champion/${campeao.image.full}`;
-          this.champImgUrls.push(imgUrl);
-
-          console.log(this.champImgUrls)
-          
-        }
-
-
-      }
-      )};
-
+            let imgUrl = `https://ddragon.leagueoflegends.com/cdn/14.6.1/img/champion/${campeao.image.full}`;
+            this.champImgUrls.push(imgUrl);
+          }
+      })
+    
+    };
+      
 }
 

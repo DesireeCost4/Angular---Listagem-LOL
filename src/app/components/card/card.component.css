@@ -6,9 +6,9 @@
     align-items: center;
     justify-content: center;
     text-align: center;
-    background-color: #333;
+    background-color: #060e1f;
     border-radius: 10px;
-    padding: 10px;
+   
     
 }
 
@@ -17,14 +17,15 @@
     width: 200px;
     height: 300px;
     padding: 5px;
-    background-color: #080808;
+    background-color: #061e36;
     border-radius: 10px;
     margin: 5px;
 }
 
 .info__card > p, h2 {
-    color: #fff;
-    background-color: #3b3535;
+    color: #000;
+    background-color: #d1b882;
+    border: 1px solid #000;
     border-radius: 10px;
     
 }
