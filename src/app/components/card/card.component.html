@@ -1,0 +1,16 @@
+<div class="container__main">
+
+
+    <div  *ngFor="let champion of champions; let i =index" class="info__card">
+
+        <h2>{{ champion.name }}</h2>
+        <p>Title: {{ champion.title }}</p>
+
+         <img [src]='champImgUrls[i]' alt="" srcset="">
+     
+
+    </div>
+
+    
+
+</div>
